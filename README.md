@@ -11,4 +11,5 @@ Regression Analysis can be classified into different types based on various fact
 - **Simple Linear Regression** :
 - **Multiple Linear Regression** :
 - **Logistic Regression** :
-- **Poisson Regression** : 
+- **Poisson Regression** :
+- **Multivariate Regression** : 
