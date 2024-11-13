@@ -1,2 +1,2 @@
-# <div align = "center">Regression</div>
+# <div align = "center">Regression Analysis</div>
 
