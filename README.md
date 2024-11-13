@@ -18,3 +18,4 @@ Regression Analysis can be classified into different types based on various fact
 - **Simple Linear Regression** : This type of regression involves a `single independent variable` that is `continuous`.
 - **Polynomial Regression** : This type of regression involves a `single independent variable` that is continuous but the `relationship` between independent and dependent variable is `non-linear`.
 - **categorical Regression** : This type of regression analysis involves a `single independent variable` that is `categorical`.
+- **Mixed Regression** : This type of regression involves a `combination of continuous and categorical independent variables`.
