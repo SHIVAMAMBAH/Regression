@@ -1,2 +1,2 @@
-# Regression
-Regression Models
+# <div align = "center">Regression</div>
+
