@@ -9,7 +9,7 @@
 Regression Analysis can be classified into different types based on various factors.
 ### Based on the type of the dependent variable
 - **Simple Linear Regression** : This type of regression analysis involves a `single dependent variable` and a `single independent variable`.
-- **Multiple Linear Regression** :
+- **Multiple Linear Regression** : This type of regression analysis involves a `single dependent variable` and `multiple independent variable`.
 - **Logistic Regression** :
 - **Poisson Regression** :
 - **Multivariate Regression** : 
