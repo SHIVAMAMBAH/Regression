@@ -6,4 +6,4 @@
 
 >In `Traditional Regression Analysis`, there is typically `only one dependent variable`. However, there are some extensions of traditional regression analysis for `multiple dependent variables` or outputs. These include : `Multivariate regression`, `Multitasking learning`, `vector-valued regression`.
 ## <div align = "center">Classification of Regression Analysis</div>
-Regression Analysis can be
+Regression Analysis can be classified
