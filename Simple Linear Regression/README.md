@@ -15,6 +15,10 @@ The formula for m is:
 
 ![Capture15](https://github.com/user-attachments/assets/dbc3661b-ddf7-4c25-8307-672eb871cbab)
 
+The formula for c is:
+
+![Capture18](https://github.com/user-attachments/assets/9335ca97-ca98-4a51-9c2e-54d6726390bd)
+
 - Start with SSE:
 
   ![Capture16](https://github.com/user-attachments/assets/35c4fa91-825a-4ef0-b00d-bf5c2a23aa1c)
