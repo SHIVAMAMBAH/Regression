@@ -51,8 +51,10 @@ If X<sup>T</sup>X is invertible, we solve for *B*:
 This equation provides the optima regression coefficients using the least squares method.
 
 
+##
 
-
+- In case of one independent variable and one dependent variable, the graph will be a straight line in 2-D.
+- In case of two independent variable and one dependent variable, the graph will be a plane in 3-D.
 
 
   
