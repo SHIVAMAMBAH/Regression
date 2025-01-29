@@ -15,15 +15,14 @@ Verifying these assumptions is crucial to ensure that the model is valid.
 
 ### **3. Regularization Techniques**
    - **Ridge Regression (L2 Regularization)**: Adds a penalty term to the loss function, which shrinks the coefficients, discouraging them from growing too large. This helps mitigate multicollinearity and overfitting.
-     \[
-     \text{Loss} = \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} b_j^2
-     \]
-     where \( \lambda \) is the regularization parameter.
+   - 
+     ![Capture50](https://github.com/user-attachments/assets/ec7ab31e-c765-4f1f-8edd-6351d507c34c)
+
+     where $\lambda$  is the regularization parameter.
 
    - **Lasso Regression (L1 Regularization)**: Similar to Ridge but uses the absolute value of the coefficients, which can drive some of the coefficients to zero. This is useful for feature selection.
-     \[
-     \text{Loss} = \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} |b_j|
-     \]
+
+     ![Capture51](https://github.com/user-attachments/assets/8bbeb93e-ea25-4a75-8885-c6cbc3fe277f)
 
 ### **4. Feature Selection and Transformation**
    - **Feature Selection**: Choosing the right features is crucial for building effective models. Techniques like **Forward Selection**, **Backward Elimination**, and **Stepwise Selection** can help identify the most significant features.
@@ -49,4 +48,4 @@ You’ve covered **multiple linear regression** for \( n \) independent variable
    - **Influence Diagnostics**: Identify influential points using **Cook's Distance**, which helps identify data points that disproportionately affect the regression model.
 
 ### **9. Gradient Descent and Optimization**
-   - **Gradient Descent**: While the closed-form solution \( B = (X^T X)^{-1} X^T Y \) works well for smaller datasets, for large datasets or when \( X^T X \) is not invertible, you can use **gradient descent** for optimization. It's an iterative approach to minimize the cost function by adjusting the weights in the direction of the gradient.
+   - **Gradient Descent**: While the closed-form solution  B = (X<sup>T</sup> X)<sup>-1</sup> X<sup>T</sup>Y works well for smaller datasets, for large datasets or when \( X^T X \) is not invertible, you can use **gradient descent** for optimization. It's an iterative approach to minimize the cost function by adjusting the weights in the direction of the gradient.
