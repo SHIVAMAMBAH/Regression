@@ -48,9 +48,7 @@ This is typically assessed using **cross-validation** or by plotting the **learn
   The model fits the training data very well but performs poorly on unseen data.
   
 - For underfitting:
-  \[
-  MSE_{\text{train}} \approx MSE_{\text{test}} \quad \text{(both high)}
-  \]
+  *MSE*<sub>train</sub> approx sign *MSE*<sub>test</sub> (both high)
   The model does not capture the underlying pattern, leading to poor performance on both datasets.
 
 ### **3. Types of Overfitting and Underfitting**
