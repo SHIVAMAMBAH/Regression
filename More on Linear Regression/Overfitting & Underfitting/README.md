@@ -110,5 +110,5 @@ There are different manifestations of overfitting and underfitting, based on how
 
 - **Underfitting**:
   - Increase **model complexity** (e.g., use higher-degree polynomials or more interaction terms).
-  - Decrease **regularization** by reducing \( \lambda \).
+  - Decrease **regularization** by reducing $\lambda$.
   - Add more **relevant features** or use **non-linear models** to capture complex relationships.
