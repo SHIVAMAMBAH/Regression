@@ -8,7 +8,7 @@ where:
 - b<sub>0</sub>, b<sub>1</sub>, b<sub>2</sub>, ...... b<sub>n</sub> are regression coefficients.
 - $\epsilon$  is the error term.
 
-Step 1: Matrix Representation
+**Step 1**: **Matrix Representation**
 We represent the system in matrix form
 *Y* = *X* *B* + *E*
 
@@ -29,6 +29,7 @@ where:
   
   ![Capture43](https://github.com/user-attachments/assets/af918f4a-54a0-4dfd-b6b1-c612403dbef1)
 
-Step 2: 
+**Step 2: Normal Equation**
+
 
   
