@@ -44,9 +44,7 @@ This is typically assessed using **cross-validation** or by plotting the **learn
 
 **Mathematical Representation:**
 - For overfitting:
-  \[
-  MSE_{\text{train}} \ll MSE_{\text{test}}
-  \]
+  *MSE*<sub>train</sub> << *MSE*<sub>test</sub>
   The model fits the training data very well but performs poorly on unseen data.
   
 - For underfitting:
