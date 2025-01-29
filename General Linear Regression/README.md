@@ -30,6 +30,21 @@ where:
   ![Capture43](https://github.com/user-attachments/assets/af918f4a-54a0-4dfd-b6b1-c612403dbef1)
 
 **Step 2: Normal Equation**
+TO find the best-fit coefficients, we minimizes the sum of squared errors:
+
+![Capture45](https://github.com/user-attachments/assets/c07fdc7d-5699-43c6-bfae-dbd81a53e36e)
+
+Taking the derivative with respect to *B* and setting it to zero:
+
+![Capture44](https://github.com/user-attachments/assets/944cd76f-a5ad-49ad-be8e-55dc3600fce5)
+
+Solving:
+
+![Capture46](https://github.com/user-attachments/assets/32949b11-e972-4b53-aae9-440b2c835dd4)
+
+
+
+
 
 
   
