@@ -14,6 +14,7 @@ We represent the system in matrix form
 
 where:
 - *Y* is the *m* x 1 column vector of dependent variables:
+  
   ![Capture40](https://github.com/user-attachments/assets/1d84592c-931f-44e8-847a-d8df6df209fe)
 
 - *X* is the *m* x (n + 1) matrix of independent variables (with a column of ones for b<sub>0</sub>)
