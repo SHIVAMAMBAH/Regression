@@ -55,6 +55,6 @@ This equation provides the optima regression coefficients using the least square
 
 - In case of one independent variable and one dependent variable, the graph will be a straight line in 2-D.
 - In case of two independent variable and one dependent variable, the graph will be a plane in 3-D.
-
+- In case of three independent varibale and one dependent variable, the model will be in 4-D space.
 
   
