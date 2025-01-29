@@ -75,28 +75,27 @@ There are different manifestations of overfitting and underfitting, based on how
 
 1. **Regularization**:
    - **Ridge Regression (L2 Regularization)**: Adds a penalty to the cost function that is proportional to the square of the magnitude of the coefficients:
-     \[
-     \text{Cost} = \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} b_j^2
-     \]
-     where \( \lambda \) is the regularization parameter.
+
+   ![Capture50](https://github.com/user-attachments/assets/db5d601b-0137-407c-be4d-12c3b162054a)
+
      
    - **Lasso Regression (L1 Regularization)**: Adds a penalty to the cost function that is proportional to the absolute value of the coefficients:
-     \[
-     \text{Cost} = \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} |b_j|
-     \]
+
+   ![Capture51](https://github.com/user-attachments/assets/256cc4b8-031f-4fba-baf6-e25c45f1fff1)
+
      Lasso can drive some coefficients to zero, effectively performing feature selection.
 
-2. **Cross-Validation**: Use **k-fold cross-validation** to assess model performance on unseen data. This helps detect overfitting during training and ensures better generalization.
+3. **Cross-Validation**: Use **k-fold cross-validation** to assess model performance on unseen data. This helps detect overfitting during training and ensures better generalization.
 
-3. **Pruning/Reducing Model Complexity**: Simplify the model by reducing the number of features (feature selection) or using a lower-degree polynomial regression instead of high-degree terms.
+4. **Pruning/Reducing Model Complexity**: Simplify the model by reducing the number of features (feature selection) or using a lower-degree polynomial regression instead of high-degree terms.
 
-4. **Early Stopping**: If you are using gradient descent for optimization, monitor the performance on the validation set and stop training when the validation error begins to rise, even if the training error is still decreasing.
+5. **Early Stopping**: If you are using gradient descent for optimization, monitor the performance on the validation set and stop training when the validation error begins to rise, even if the training error is still decreasing.
 
 #### **Underfitting Solutions:**
 
 1. **Increase Model Complexity**: Use higher-degree polynomial regression or add more interaction terms between variables to allow the model to capture more complex relationships in the data.
 
-2. **Reduce Regularization**: If you're using Lasso or Ridge regression, try decreasing the regularization parameter \( \lambda \). A very large \( \lambda \) can drive too many coefficients to zero and underfit the data.
+2. **Reduce Regularization**: If you're using Lasso or Ridge regression, try decreasing the regularization parameter $\lambda$. A very large $\lambda$ can drive too many coefficients to zero and underfit the data.
 
 3. **Include More Features**: Adding relevant features to the model (e.g., through feature engineering) can help the model capture more information from the data.
 
