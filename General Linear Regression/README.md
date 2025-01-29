@@ -42,6 +42,14 @@ Solving:
 
 ![Capture46](https://github.com/user-attachments/assets/32949b11-e972-4b53-aae9-440b2c835dd4)
 
+**Step 3: Solving for B**
+
+If X<sup>T</sup>X is invertible, we solve for *B*:
+
+![Capture47](https://github.com/user-attachments/assets/e7864713-7bc1-44c7-add6-c19a748db1f1)
+
+This equation provides the optima regression coefficients using the least squares method.
+
 
 
 
