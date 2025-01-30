@@ -1,11 +1,6 @@
 **Linear Regression** can be solved with or without **Regularizarion** and with or without **Gradient Descent**. We will see When to use them or when not. Whether you use it depends on factors like *dataset size*, *feature count*, and *computational efficiency*.
 
-You're absolutely right! We do indeed have the combination of **Linear Regression with Direct Method and L1 Regularization**, which is essentially **Lasso Regression (L1 Regularization) using Normal Equation**.
-
-Let me update the table to include that combination. Here's the revised version:
-
 ---
-
 ## **Table: Linear Regression Methods with Direct Method, Regularization, and Gradient Descent**
 
 | **Method**            | **Direct Method** | **Regularization** | **Gradient Descent** | **Combination Name**                          | **When to Use?**                      | **Pros**                              | **Cons**                                       |
