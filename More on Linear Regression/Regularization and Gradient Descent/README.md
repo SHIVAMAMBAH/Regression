@@ -1,4 +1,5 @@
 **Linear Regression** can be solved with or without **Regularizarion** and with or without **Gradient Descent**. We will see When to use them or when not. Whether you use it depends on factors like *dataset size*, *feature count*, and *computational efficiency*.
+
 ---
 ### Effect of Data Type on Choice (Direct Method or Gradient Descent)
 - **Small datasets (e.g., 1000 samples, 10 features)** → Normal Equation is better.
