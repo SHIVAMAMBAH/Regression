@@ -18,25 +18,15 @@ where:
 - **b** = [*b*<sub>0</sub>, *b*<sub>1</sub>, *b*<sub>2</sub>, ...., *b*<sub>p</sub>]<sup>T</sup> is the parameter vector.
 - $\epsilon$ <sup>i</sup> is the error term (residual) for the \( i \)-th example.
 
-The error term \( \epsilon^{(i)} \) captures the difference between the actual and predicted values:
+The error term $\epsilon$ <sup>i</sup> captures the difference between the actual and predicted values.
 
-\[
-\epsilon^{(i)} = y^{(i)} - \hat{y}^{(i)}
-\]
-
-where \( \hat{y}^{(i)} = \mathbf{b}^T \mathbf{x}^{(i)} \) is the predicted value.
 
 For the entire dataset:
 
-\[
-\mathbf{y} = X \mathbf{b} + \boldsymbol{\epsilon}
-\]
-
 where:
-- \( \mathbf{y} \) is an \( n \times 1 \) vector of actual values.
-- \( X \) is an \( n \times (p+1) \) feature matrix (including bias).
-- \( \boldsymbol{\epsilon} \) is an \( n \times 1 \) vector of error terms.
-
+- **y** is an \( n \times 1 \) vector of actual values.
+- **X** is an \( n \times (p+1) \) feature matrix (including bias).
+- $\epsilon$ <sup>i</sup> is an \( n \times 1 \) vector of error terms.
 ---
 
 ### **Step 2: Defining the Cost Function**
