@@ -64,21 +64,17 @@ Rewriting in matrix form:
 ### **Step 4: Gradient Descent Update Rule**
 Applying the gradient descent update rule:
 
-\[
-\mathbf{b} := \mathbf{b} - \alpha \nabla J(\mathbf{b})
-\]
+![image](https://github.com/user-attachments/assets/5bb33976-07a9-4ba6-afd5-cbcf7eb1481e)
+
 
 Substituting the gradient:
 
-\[
-\mathbf{b} := \mathbf{b} + \alpha \left( \frac{1}{n} X^T (\mathbf{y} - X \mathbf{b}) \right)
-\]
+![image](https://github.com/user-attachments/assets/fc14d229-b894-4d08-98f5-6351f8304d13)
+
 
 For each parameter \( b_j \):
 
-\[
-b_j := b_j + \alpha \left( \frac{1}{n} \sum_{i=1}^{n} (y^{(i)} - \mathbf{b}^T \mathbf{x}^{(i)}) x_j^{(i)} \right)
-\]
+![image](https://github.com/user-attachments/assets/6b159958-3a98-4d57-b349-de23e483aa91)
 
 ---
 
