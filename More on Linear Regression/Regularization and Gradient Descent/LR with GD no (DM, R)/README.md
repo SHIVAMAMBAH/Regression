@@ -24,9 +24,9 @@ The error term $\epsilon$ <sup>i</sup> captures the difference between the actua
 For the entire dataset:
 
 where:
-- **y** is an \( n \times 1 \) vector of actual values.
-- **X** is an \( n \times (p+1) \) feature matrix (including bias).
-- $\epsilon$ <sup>i</sup> is an \( n \times 1 \) vector of error terms.
+- **y** is an *n* X 1 vector of actual values.
+- **X** is an *n* X (*p* + 1) feature matrix (including bias).
+- $\epsilon$ <sup>i</sup> is an *n* X 1 vector of error terms.
 ---
 
 ### **Step 2: Defining the Cost Function**
