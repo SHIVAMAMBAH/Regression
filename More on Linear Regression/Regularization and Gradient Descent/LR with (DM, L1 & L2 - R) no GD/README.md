@@ -29,9 +29,9 @@ where:
 - $\lambda$<sub>1</sub> > 0 is the regularization parameter for **L1 regularization** (Lasso).  
 - $\lambda$<sub>2</sub> > 0 is the regularization parameter for **L2 regularization** (Ridge).  
 - ![image](https://github.com/user-attachments/assets/ab7be21c-e0ea-4df8-8205-4545b52153f5)
- is the **\(L_1\)-norm penalty** that encourages sparsity in the coefficients.  
+ is the **L<sub>1</sub>-norm penalty** that encourages sparsity in the coefficients.  
 - ![image](https://github.com/user-attachments/assets/88069aa3-9872-4160-9e2e-e6622555b958)
- is the **\(L_2\)-norm penalty** that encourages small coefficients but does not promote sparsity.
+ is the **L<sub>2,/sub>-norm penalty** that encourages small coefficients but does not promote sparsity.
 
 ---
 
