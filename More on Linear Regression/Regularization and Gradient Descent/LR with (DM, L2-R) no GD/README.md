@@ -118,13 +118,13 @@ Now, factoring out $\beta$<sub>j</sub> from the left side:
 ![image](https://github.com/user-attachments/assets/4cfb6b79-7a74-4a65-ae49-7dc3a9d5759d)
 
 
-where \(I\) is the \(p \times p\) identity matrix. This is the **Ridge regression normal equation**.
+where I is the p X p identity matrix. This is the **Ridge regression normal equation**.
 
 ---
 
 ## **7. Final Direct Solution for Ridge Regression**
 
-To solve for $\beta$<sub>j</sub>, multiply both sides by \((X^T X + \lambda I)^{-1}\):
+To solve for $\beta$<sub>j</sub>, multiply both sides by (X<sup>T</sup> X + $\lambda$ I)<sup>-1</sup>:
 
 ![image](https://github.com/user-attachments/assets/26183ddb-6617-4272-b90a-6582e51ff94a)
 
@@ -134,6 +134,6 @@ Thus, the **direct solution for Ridge regression** is:
 ![image](https://github.com/user-attachments/assets/fe7f7619-d41f-4f20-bdfc-a3fc8c1e8547)
 
 
-This solution requires the matrix \(X^T X + \lambda I\) to be invertible, which is guaranteed when $\lambda$ > 0.
+This solution requires the matrix X<sup>T</sup> X + $\lambda$ I to be invertible, which is guaranteed when $\lambda$ > 0.
 
 ---
