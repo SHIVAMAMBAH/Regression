@@ -13,9 +13,9 @@ or in vector notation:
 
 
 where:
-- \( y^{(i)} \) is the actual target value for the \( i \)-th example.
-- \( \mathbf{x}^{(i)} = [1, x_1^{(i)}, x_2^{(i)}, \dots, x_p^{(i)}]^T \) is the feature vector (including the bias term).
-- \( \mathbf{b} = [b_0, b_1, b_2, \dots, b_p]^T \) is the parameter vector.
+- *y* <sup>i</sup> is the actual target value for the \( i \)-th example.
+- **X**<sup>i</sup> = [1, *x*<sub>1</sub> <sup>i</sup>, *x*<sub>2</sub> <sup>i</sup>, ....., *x*<sub>p</sub> <sup>i</sup>]<sup>T</sup> is the feature vector (including the bias term).
+- **b** = [*b*<sub>0</sub>, *b*<sub>1</sub>, *b*<sub>2</sub>, ...., *b*<sub>p</sub>]<sup>T</sup> is the parameter vector.
 - \( \epsilon^{(i)} \) is the error term (residual) for the \( i \)-th example.
 
 The error term \( \epsilon^{(i)} \) captures the difference between the actual and predicted values:
