@@ -58,20 +58,20 @@ into the **Lagrange form**:
 ![image](https://github.com/user-attachments/assets/7d816308-1d31-4f3d-b3ae-b25aa4f21104)
 
 
-where \(\lambda\) is the **Lagrange multiplier**.
+where $\lambda$ is the **Lagrange multiplier**.
 
 ---
 
 ## **5. Differentiation of the Objective Function**  
 
-To find the optimal \(\beta\), we take the derivative of \(\mathcal{L}(\beta)\) **w.r.t.** each coefficient \(\beta_j\).  
+To find the optimal $\beta$, we take the derivative of \(\mathcal{L}(\beta)\) **w.r.t.** each coefficient $\beta$ <sub>j</sub>.  
 
 The squared error term expands as:
 
 ![image](https://github.com/user-attachments/assets/777dfd0e-e338-4312-a4bd-794102aae87a)
 
 
-Differentiating w.r.t. \(\beta_j\):
+Differentiating w.r.t. $\beta$ <sub>j</sub>:
 
 ![image](https://github.com/user-attachments/assets/f97fa9d0-9d37-4beb-ba25-631148059f51)
 
