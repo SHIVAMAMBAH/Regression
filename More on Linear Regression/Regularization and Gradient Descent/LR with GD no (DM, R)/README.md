@@ -83,4 +83,4 @@ For each parameter \( b_j \):
 2. **Compute the error** $\epsilon$ = **y** - **X** **b**.
 3. **Calculate the gradient** \( \nabla J(\mathbf{b}) \).
 4. **Update** **b** using gradient descent.
-5. **Repeat** until convergence (when \( J(\mathbf{b}) \) stabilizes).
+5. **Repeat** until convergence (when **J**(**b**) stabilizes).
