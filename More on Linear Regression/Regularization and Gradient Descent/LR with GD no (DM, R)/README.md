@@ -5,11 +5,8 @@ We aim to model the relationship between \( n \) training examples and \( p \) f
 ---
 
 ### **Step 1: Defining the Model Equation with Error Term**
-A linear regression model with an explicit error term can be expressed as:
-
-\[
-y^{(i)} = \mathbf{b}^T \mathbf{x}^{(i)} + \epsilon^{(i)}
-\]
+For each training example *i*, we assume a linear model:  
+*y* <sup>i</sup> = *b*<sub>0</sub> + *b*<sub>1</sub> *x*<sub>1</sub> <sup>i</sup> + *b*<sub>2</sub> *x*<sub>2</sub> <sup>i</sup> + .... + *b*<sub>p</sub> *x*<sub>p</sub> <sup>i</sup>
 
 where:
 - \( y^{(i)} \) is the actual target value for the \( i \)-th example.
