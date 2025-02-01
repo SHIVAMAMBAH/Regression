@@ -28,8 +28,10 @@ In **Elastic Net**, the objective function combines both L1 and L2 regularizatio
 where:  
 - $\lambda$1 > 0 is the regularization parameter for **L1 regularization** (Lasso).  
 - $\lambda$2 > 0 is the regularization parameter for **L2 regularization** (Ridge).  
-- \(\sum_{j=1}^{p} |\beta_j|\) is the **\(L_1\)-norm penalty** that encourages sparsity in the coefficients.  
-- \(\sum_{j=1}^{p} \beta_j^2\) is the **\(L_2\)-norm penalty** that encourages small coefficients but does not promote sparsity.
+- ![image](https://github.com/user-attachments/assets/ab7be21c-e0ea-4df8-8205-4545b52153f5)
+ is the **\(L_1\)-norm penalty** that encourages sparsity in the coefficients.  
+- ![image](https://github.com/user-attachments/assets/88069aa3-9872-4160-9e2e-e6622555b958)
+ is the **\(L_2\)-norm penalty** that encourages small coefficients but does not promote sparsity.
 
 ---
 
@@ -47,7 +49,8 @@ We first take the derivative of the first part, the residual sum of squares (RSS
 
 Next, we take the derivatives of the regularization terms.
 
-- The derivative of the **\(L_1\)-norm** is not as straightforward because of the absolute value. The derivative of \(\sum_{j=1}^{p} |\beta_j|\) is a **subdifferential** (the derivative does not exist at \(\beta_j = 0\) but can be represented as a set of values). It is given by:
+- The derivative of the **L1-norm** is not as straightforward because of the absolute value. The derivative of ![image](https://github.com/user-attachments/assets/dbc9a63d-4209-46bb-91fb-f8eb75921b6f)
+ is a **subdifferential** (the derivative does not exist at $\beta$ <sub>j</sub> = 0 but can be represented as a set of values). It is given by:
 
   ![image](https://github.com/user-attachments/assets/69748a02-b28b-491d-abdc-442e9041233a)
 
