@@ -33,7 +33,7 @@ Ridge regression adds an \(L_2\)-norm penalty (also known as **Tikhonov regulari
 where:  
 - $\lambda$ > 0 is the **regularization parameter** controlling the magnitude of \(\beta\).  
 - ![image](https://github.com/user-attachments/assets/140b1802-6d26-481d-83fb-101c301e2a19)
- is the **\(L_2\)-penalty** that shrinks the coefficients \(\beta_j\), but does not set them to zero.
+ is the **\(L_2\)-penalty** that shrinks the coefficients $\beta$<sub>j</sub>, but does not set them to zero.
 
 ---
 
@@ -62,7 +62,7 @@ The squared error term expands as:
 ![image](https://github.com/user-attachments/assets/e6efeb1b-b03d-48d5-ae2a-a8eb936e1d54)
 
 
-Differentiating w.r.t. \(\beta_j\):
+Differentiating w.r.t. $\beta$<sub>j</sub>**:
 
 ![image](https://github.com/user-attachments/assets/bbbc3a92-075e-44b3-b81c-61a5a522fe58)
 
@@ -85,14 +85,14 @@ Rearranging:
 
 ---
 
-## **5. Solving for \(\beta\)**  
+## **5. Solving for $\beta$<sub>j</sub>**  
 
-Rearrange for \(\beta_j\):
+Rearrange for $\beta$<sub>j</sub>:
 
 ![image](https://github.com/user-attachments/assets/304666b5-cfa0-4a47-a55f-08551c226649)
 
 
-We have a system of equations for all \(\beta_j\). However, this system can be solved **directly** by using matrix algebra for all coefficients at once.
+We have a system of equations for all $\beta$<sub>j</sub>. However, this system can be solved **directly** by using matrix algebra for all coefficients at once.
 
 ---
 
@@ -103,7 +103,7 @@ We rewrite the objective function in matrix form:
 ![image](https://github.com/user-attachments/assets/4628fde4-5365-4569-a4ff-42cdda81ba4f)
 
 
-The normal equation for this problem is derived by differentiating the objective function with respect to \(\beta\) and setting it equal to zero:
+The normal equation for this problem is derived by differentiating the objective function with respect to $\beta$<sub>j</sub> and setting it equal to zero:
 
 ![image](https://github.com/user-attachments/assets/5421bf03-80e1-4b6f-aa99-3a69546bb9ce)
 
@@ -113,7 +113,7 @@ Rearranging:
 ![image](https://github.com/user-attachments/assets/d6935023-9a56-40ad-8ec3-91058cd2eb8b)
 
 
-Now, factoring out \(\beta\) from the left side:
+Now, factoring out $\beta$<sub>j</sub> from the left side:
 
 ![image](https://github.com/user-attachments/assets/4cfb6b79-7a74-4a65-ae49-7dc3a9d5759d)
 
@@ -124,7 +124,7 @@ where \(I\) is the \(p \times p\) identity matrix. This is the **Ridge regressio
 
 ## **7. Final Direct Solution for Ridge Regression**
 
-To solve for \(\beta\), multiply both sides by \((X^T X + \lambda I)^{-1}\):
+To solve for $\beta$<sub>j</sub>, multiply both sides by \((X^T X + \lambda I)^{-1}\):
 
 ![image](https://github.com/user-attachments/assets/26183ddb-6617-4272-b90a-6582e51ff94a)
 
@@ -134,6 +134,6 @@ Thus, the **direct solution for Ridge regression** is:
 ![image](https://github.com/user-attachments/assets/fe7f7619-d41f-4f20-bdfc-a3fc8c1e8547)
 
 
-This solution requires the matrix \(X^T X + \lambda I\) to be invertible, which is guaranteed when \(\lambda > 0\).
+This solution requires the matrix \(X^T X + \lambda I\) to be invertible, which is guaranteed when $\lambda$ > 0.
 
 ---
