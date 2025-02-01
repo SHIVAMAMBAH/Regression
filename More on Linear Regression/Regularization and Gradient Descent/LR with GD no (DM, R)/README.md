@@ -80,7 +80,7 @@ For each parameter \( b_j \):
 
 ### **Step 5: Iterative Optimization**
 1. **Initialize** **b** (e.g., zeros or small random values).
-2. **Compute the error** \( \boldsymbol{\epsilon} = **y** - **X** **b**.
+2. **Compute the error** $\epsilon$ = **y** - **X** **b**.
 3. **Calculate the gradient** \( \nabla J(\mathbf{b}) \).
-4. **Update** \( \mathbf{b} \) using gradient descent.
+4. **Update** **b** using gradient descent.
 5. **Repeat** until convergence (when \( J(\mathbf{b}) \) stabilizes).
