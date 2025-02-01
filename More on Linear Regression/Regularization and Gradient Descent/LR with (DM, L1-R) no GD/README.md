@@ -96,7 +96,7 @@ Rearranging:
 
 ## **6. Soft-Thresholding Solution**  
 
-Rearrange for \(\beta_j\):
+Rearrange for $\beta$ <sub>j</sub>:
 
 ![image](https://github.com/user-attachments/assets/3639cb64-682e-465f-80b4-d41a86128a40)
 
