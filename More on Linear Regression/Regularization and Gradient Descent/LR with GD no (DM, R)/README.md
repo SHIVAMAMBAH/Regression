@@ -32,36 +32,32 @@ where:
 ### **Step 2: Defining the Cost Function**
 To minimize the overall error, we use the **Mean Squared Error (MSE)** cost function:
 
-\[
-J(\mathbf{b}) = \frac{1}{2n} \sum_{i=1}^{n} \epsilon^{(i)2}
-\]
+![image](https://github.com/user-attachments/assets/f17fa658-3adb-4970-b5f6-ba15ec8bdb5d)
+
+
 
 Substituting the error term:
 
-\[
-J(\mathbf{b}) = \frac{1}{2n} \sum_{i=1}^{n} (y^{(i)} - \mathbf{b}^T \mathbf{x}^{(i)})^2
-\]
+![image](https://github.com/user-attachments/assets/415cc651-1ba6-4b2a-9366-c61e44aeeea4)
+
 
 Or in matrix notation:
 
-\[
-J(\mathbf{b}) = \frac{1}{2n} \| \mathbf{y} - X \mathbf{b} \|^2
-\]
+![image](https://github.com/user-attachments/assets/3740757d-09e6-4715-a461-6af10e97d019)
+
 
 ---
 
 ### **Step 3: Computing the Gradient**
 To minimize \( J(\mathbf{b}) \), we compute its gradient with respect to each parameter \( b_j \):
 
-\[
-\frac{\partial J}{\partial b_j} = -\frac{1}{n} \sum_{i=1}^{n} (y^{(i)} - \mathbf{b}^T \mathbf{x}^{(i)}) x_j^{(i)}
-\]
+![image](https://github.com/user-attachments/assets/86286412-cb30-40c1-b170-cb6b561a5ed0)
+
 
 Rewriting in matrix form:
 
-\[
-\nabla J(\mathbf{b}) = -\frac{1}{n} X^T (\mathbf{y} - X \mathbf{b})
-\]
+![image](https://github.com/user-attachments/assets/ed210b50-7d4f-45bb-8346-e2594c39b8f1)
+
 
 ---
 
