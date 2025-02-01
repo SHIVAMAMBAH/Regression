@@ -64,7 +64,7 @@ where $\lambda$ is the **Lagrange multiplier**.
 
 ## **5. Differentiation of the Objective Function**  
 
-To find the optimal $\beta$, we take the derivative of \(\mathcal{L}(\beta)\) **w.r.t.** each coefficient $\beta$ <sub>j</sub>.  
+To find the optimal $\beta$, we take the derivative of L($\beta$) **w.r.t.** each coefficient $\beta$ <sub>j</sub>.  
 
 The squared error term expands as:
 
