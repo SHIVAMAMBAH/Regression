@@ -5,9 +5,7 @@
 
 A linear regression model is defined as:  
 
-\[
-Y = X\beta + \epsilon
-\]
+**Y** = **X** **B** + $\epsilon$
 
 where:  
 - \(X\) is the \(n \times p\) design matrix (with \(n\) observations and \(p\) features).  
