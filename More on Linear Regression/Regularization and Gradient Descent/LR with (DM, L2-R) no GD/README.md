@@ -31,8 +31,9 @@ Ridge regression adds an \(L_2\)-norm penalty (also known as **Tikhonov regulari
 
 
 where:  
-- \(\lambda > 0\) is the **regularization parameter** controlling the magnitude of \(\beta\).  
-- \(\sum_{j=1}^{p} \beta_j^2\) is the **\(L_2\)-penalty** that shrinks the coefficients \(\beta_j\), but does not set them to zero.
+- $\lambda$ > 0 is the **regularization parameter** controlling the magnitude of \(\beta\).  
+- ![image](https://github.com/user-attachments/assets/140b1802-6d26-481d-83fb-101c301e2a19)
+ is the **\(L_2\)-penalty** that shrinks the coefficients \(\beta_j\), but does not set them to zero.
 
 ---
 
@@ -48,13 +49,13 @@ we write the **Lagrange function**:
 ![image](https://github.com/user-attachments/assets/b3484c32-45ed-4c12-92fa-80d24560df9d)
 
 
-where \(\lambda\) is the **Lagrange multiplier**.
+where $\lambda$ is the **Lagrange multiplier**.
 
 ---
 
 ## **4. Differentiation of the Objective Function**
 
-To find the optimal \(\beta\), we take the derivative of \(\mathcal{L}(\beta)\) **w.r.t.** each coefficient \(\beta_j\).  
+To find the optimal $\beta$, we take the derivative of L($\beta$) **w.r.t.** each coefficient $\beta$<sub>j</sub>.  
 
 The squared error term expands as:
 
