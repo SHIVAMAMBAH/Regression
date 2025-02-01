@@ -49,13 +49,13 @@ We first take the derivative of the first part, the residual sum of squares (RSS
 
 Next, we take the derivatives of the regularization terms.
 
-- The derivative of the **L1-norm** is not as straightforward because of the absolute value. The derivative of ![image](https://github.com/user-attachments/assets/dbc9a63d-4209-46bb-91fb-f8eb75921b6f)
+- The derivative of the **L<sub>1</sub>-norm** is not as straightforward because of the absolute value. The derivative of ![image](https://github.com/user-attachments/assets/dbc9a63d-4209-46bb-91fb-f8eb75921b6f)
  is a **subdifferential** (the derivative does not exist at $\beta$ <sub>j</sub> = 0 but can be represented as a set of values). It is given by:
 
   ![image](https://github.com/user-attachments/assets/69748a02-b28b-491d-abdc-442e9041233a)
 
 
-- The derivative of the **\(L_2\)-norm** is straightforward:
+- The derivative of the **L<sub>2</sub>-norm** is straightforward:
 
   ![image](https://github.com/user-attachments/assets/e7e1dc74-27c4-45d7-9f22-91e91d20843f)
 
@@ -89,7 +89,7 @@ Simplifying:
 ![image](https://github.com/user-attachments/assets/9386d351-0308-475c-9c90-4d77757f75fb)
 
 
-Now, the challenge here is that the \(L_1\) term (\(\text{sign}(\beta)\)) is **non-differentiable at zero**, so a direct closed-form solution doesn't exist like it does in Ridge or Lasso regression.
+Now, the challenge here is that the L<sub>1</sub> term sign($\beta$) is **non-differentiable at zero**, so a direct closed-form solution doesn't exist like it does in Ridge or Lasso regression.
 
 ---
 
@@ -97,7 +97,7 @@ Now, the challenge here is that the \(L_1\) term (\(\text{sign}(\beta)\)) is **n
 
 Since the solution to the equation involves non-differentiable terms, **coordinate descent** or other iterative methods are typically used for solving the **Elastic Net** optimization problem. The idea behind coordinate descent is to update one coefficient at a time while keeping the others fixed.
 
-The update rule for each \(\beta_j\) in coordinate descent is:
+The update rule for each $\beta$ <sub>j</sub>in coordinate descent is:
 
 ![image](https://github.com/user-attachments/assets/a3e2d8cb-0754-4b9b-bdd3-e05832a42b87)
 
