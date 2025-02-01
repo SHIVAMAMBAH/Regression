@@ -108,7 +108,7 @@ This is the **soft-thresholding** function:
 
 Thus, **if** 
 ![image](https://github.com/user-attachments/assets/262cb0ac-cd40-4cf0-91fb-f6a2042aeb1d)
-is small, \(\beta_j\) is **set to zero**, which enforces sparsity.
+is small, $\beta$ <sub>j</sub> is **set to zero**, which enforces sparsity.
 
 ---
 
@@ -126,6 +126,6 @@ The direct computation for **Lasso regression without gradient descent** follows
   ![image](https://github.com/user-attachments/assets/a3cdb383-8aa4-4cdc-a0cd-444267ae6ace)
 
 
-This allows computing \(\beta\) **directly** using simple thresholding without **iterative optimization methods like gradient descent**.
+This allows computing $\beta$ **directly** using simple thresholding without **iterative optimization methods like gradient descent**.
 
 ---
