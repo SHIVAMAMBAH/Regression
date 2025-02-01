@@ -18,7 +18,7 @@ The objective of least squares regression is to minimize the residual sum of squ
 ![image](https://github.com/user-attachments/assets/6bccbfb8-1774-4da7-934c-46924aa58bef)
 
 
-where \(X_i\) is the **row vector** corresponding to the \(i\)th observation.
+where X<sub>i</sub> is the **row vector** corresponding to the \(i\)th observation.
 
 ---
 
@@ -28,7 +28,7 @@ Without regularization, the **closed-form solution** of linear regression is giv
 
 ![image](https://github.com/user-attachments/assets/f06bc1aa-a90c-4e2f-a979-ad4c10d576bf)
 
-provided that \(X^T X\) is invertible.
+provided that X<sup>T</sup>T X is invertible.
 
 ---
 
