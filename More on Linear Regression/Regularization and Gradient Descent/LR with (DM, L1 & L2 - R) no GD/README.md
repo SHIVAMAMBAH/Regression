@@ -102,6 +102,6 @@ The update rule for each $\beta$ <sub>j</sub>in coordinate descent is:
 ![image](https://github.com/user-attachments/assets/a3e2d8cb-0754-4b9b-bdd3-e05832a42b87)
 
 
-where \(S(a) = \text{sign}(a) \max(0, |a| - \lambda_1)\) is the **soft-thresholding** operator that implements the **L1 regularization** (Lasso).
+where S(a) = sign(a) max(0, |a| - $\lambda$<sub>1</sub>) is the **soft-thresholding** operator that implements the **L1 regularization** (Lasso).
 
 ---
