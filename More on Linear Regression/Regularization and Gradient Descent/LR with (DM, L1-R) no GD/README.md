@@ -15,9 +15,8 @@ where:
 
 The objective of least squares regression is to minimize the residual sum of squares (RSS):
 
-\[
-\min_{\beta} \sum_{i=1}^{n} (y_i - X_i \beta)^2
-\]
+![image](https://github.com/user-attachments/assets/6bccbfb8-1774-4da7-934c-46924aa58bef)
+
 
 where \(X_i\) is the **row vector** corresponding to the \(i\)th observation.
 
@@ -27,9 +26,7 @@ where \(X_i\) is the **row vector** corresponding to the \(i\)th observation.
 
 Without regularization, the **closed-form solution** of linear regression is given by:
 
-\[
-\beta = (X^T X)^{-1} X^T Y
-\]
+![image](https://github.com/user-attachments/assets/f06bc1aa-a90c-4e2f-a979-ad4c10d576bf)
 
 provided that \(X^T X\) is invertible.
 
@@ -39,9 +36,8 @@ provided that \(X^T X\) is invertible.
 
 Lasso regression adds an \(L_1\)-norm penalty to the loss function:
 
-\[
-\min_{\beta} \sum_{i=1}^{n} (y_i - X_i \beta)^2 + \lambda \sum_{j=1}^{p} |\beta_j|
-\]
+![image](https://github.com/user-attachments/assets/ffef97c6-1fdf-4f27-866c-21c45c2bdbfd)
+
 
 where:  
 - \(\lambda > 0\) is the **regularization parameter** controlling sparsity.  
@@ -53,15 +49,13 @@ where:
 
 Instead of solving directly, we convert the constrained problem:
 
-\[
-\min_{\beta} \sum_{i=1}^{n} (y_i - X_i \beta)^2 \quad \text{subject to} \quad \sum_{j=1}^{p} |\beta_j| \leq t
-\]
+![image](https://github.com/user-attachments/assets/7bbde288-3497-4830-a858-765c6e930062)
+
 
 into the **Lagrange form**:
 
-\[
-\mathcal{L}(\beta) = \sum_{i=1}^{n} (y_i - X_i \beta)^2 + \lambda \sum_{j=1}^{p} |\beta_j|
-\]
+![image](https://github.com/user-attachments/assets/7d816308-1d31-4f3d-b3ae-b25aa4f21104)
+
 
 where \(\lambda\) is the **Lagrange multiplier**.
 
@@ -73,35 +67,29 @@ To find the optimal \(\beta\), we take the derivative of \(\mathcal{L}(\beta)\) 
 
 The squared error term expands as:
 
-\[
-\sum_{i=1}^{n} (y_i - X_i \beta)^2 = (Y - X\beta)^T (Y - X\beta)
-\]
+![image](https://github.com/user-attachments/assets/777dfd0e-e338-4312-a4bd-794102aae87a)
+
 
 Differentiating w.r.t. \(\beta_j\):
 
-\[
-\frac{\partial}{\partial \beta_j} \sum_{i=1}^{n} (y_i - X_i \beta)^2 = -2 \sum_{i=1}^{n} x_{ij} (y_i - X_i \beta)
-\]
+![image](https://github.com/user-attachments/assets/f97fa9d0-9d37-4beb-ba25-631148059f51)
 
 where \(x_{ij}\) is the \(j\)th feature of the \(i\)th observation.
 
 The derivative of the regularization term is:
 
-\[
-\frac{\partial}{\partial \beta_j} \lambda \sum_{j=1}^{p} |\beta_j| = \lambda \cdot \text{sign}(\beta_j)
-\]
+![image](https://github.com/user-attachments/assets/66168493-410b-4eb4-b7d7-9ff831b6c6fa)
+
 
 Setting the gradient to zero:
 
-\[
--2 \sum_{i=1}^{n} x_{ij} (y_i - X_i \beta) + \lambda \cdot \text{sign}(\beta_j) = 0
-\]
+![image](https://github.com/user-attachments/assets/6d3c7be7-b057-44db-95f2-8b07093e2591)
+
 
 Rearranging:
 
-\[
-\sum_{i=1}^{n} x_{ij} (X_i \beta - y_i) = -\frac{\lambda}{2} \text{sign}(\beta_j)
-\]
+![image](https://github.com/user-attachments/assets/06ab15be-e120-451d-9044-307cf0d70023)
+
 
 ---
 
@@ -109,22 +97,17 @@ Rearranging:
 
 Rearrange for \(\beta_j\):
 
-\[
-\beta_j = \frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2} - \frac{\lambda}{2} \text{sign}(\beta_j)
-\]
+![image](https://github.com/user-attachments/assets/3639cb64-682e-465f-80b4-d41a86128a40)
+
 
 This is the **soft-thresholding** function:
 
-\[
-\beta_j =
-\begin{cases}
-\frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2} - \frac{\lambda}{2}, & \frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2} > \frac{\lambda}{2} \\
-0, & \left| \frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2} \right| \leq \frac{\lambda}{2} \\
-\frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2} + \frac{\lambda}{2}, & \frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2} < -\frac{\lambda}{2}
-\end{cases}
-\]
+![image](https://github.com/user-attachments/assets/b8b3056d-7563-4886-ae5a-007585be4c5d)
 
-Thus, **if** \(\frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2}\) is small, \(\beta_j\) is **set to zero**, which enforces sparsity.
+
+Thus, **if** 
+![image](https://github.com/user-attachments/assets/262cb0ac-cd40-4cf0-91fb-f6a2042aeb1d)
+is small, \(\beta_j\) is **set to zero**, which enforces sparsity.
 
 ---
 
@@ -134,20 +117,13 @@ The direct computation for **Lasso regression without gradient descent** follows
 
 1. Compute the **OLS estimate**:
 
-   \[
-   \beta_j^{OLS} = \frac{\sum_{i=1}^{n} x_{ij} y_i}{\sum_{i=1}^{n} x_{ij}^2}
-   \]
+   ![image](https://github.com/user-attachments/assets/58591c04-a060-4c7e-a3c3-28d69d488826)
+
 
 2. Apply **soft-thresholding**:
 
-   \[
-   \beta_j^{Lasso} =
-   \begin{cases}
-   \beta_j^{OLS} - \frac{\lambda}{2}, & \beta_j^{OLS} > \frac{\lambda}{2} \\
-   0, & |\beta_j^{OLS}| \leq \frac{\lambda}{2} \\
-   \beta_j^{OLS} + \frac{\lambda}{2}, & \beta_j^{OLS} < -\frac{\lambda}{2}
-   \end{cases}
-   \]
+  ![image](https://github.com/user-attachments/assets/a3cdb383-8aa4-4cdc-a0cd-444267ae6ace)
+
 
 This allows computing \(\beta\) **directly** using simple thresholding without **iterative optimization methods like gradient descent**.
 
