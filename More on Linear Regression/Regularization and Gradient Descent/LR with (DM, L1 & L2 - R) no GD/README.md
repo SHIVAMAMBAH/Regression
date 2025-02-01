@@ -20,14 +20,14 @@ where:
 
 ## **2. Elastic Net Regularization Formulation**
 
-In **Elastic Net**, the objective function combines both \(L_1\) and \(L_2\) regularization terms:
+In **Elastic Net**, the objective function combines both L1 and L2 regularization terms:
 
 ![image](https://github.com/user-attachments/assets/3e1f8c56-9356-4eb9-95fd-26578ac5c897)
 
 
 where:  
-- \(\lambda_1 > 0\) is the regularization parameter for **L1 regularization** (Lasso).  
-- \(\lambda_2 > 0\) is the regularization parameter for **L2 regularization** (Ridge).  
+- $\lambda$1 > 0 is the regularization parameter for **L1 regularization** (Lasso).  
+- $\lambda$2 > 0 is the regularization parameter for **L2 regularization** (Ridge).  
 - \(\sum_{j=1}^{p} |\beta_j|\) is the **\(L_1\)-norm penalty** that encourages sparsity in the coefficients.  
 - \(\sum_{j=1}^{p} \beta_j^2\) is the **\(L_2\)-norm penalty** that encourages small coefficients but does not promote sparsity.
 
