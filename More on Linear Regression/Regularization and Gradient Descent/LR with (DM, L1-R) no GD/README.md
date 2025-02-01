@@ -9,7 +9,7 @@ A linear regression model is defined as:
 
 where:  
 - **X** is the *n* X *p* design matrix (with *n* observations and *p* features).  
-- \(\beta\) is the \(p \times 1\) coefficient vector.  
+- **B** is the *p* X 1 coefficient vector.  
 - \(Y\) is the \(n \times 1\) response vector.  
 - \(\epsilon\) is the error term (assumed to be normally distributed).  
 
