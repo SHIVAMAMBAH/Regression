@@ -75,7 +75,7 @@ Differentiating w.r.t. $\beta$ <sub>j</sub>:
 
 ![image](https://github.com/user-attachments/assets/f97fa9d0-9d37-4beb-ba25-631148059f51)
 
-where \(x_{ij}\) is the \(j\)th feature of the \(i\)th observation.
+where x<sub>ij</sub is the j<sub>th</sub> feature of the i<sup>th</sup> observation.
 
 The derivative of the regularization term is:
 
