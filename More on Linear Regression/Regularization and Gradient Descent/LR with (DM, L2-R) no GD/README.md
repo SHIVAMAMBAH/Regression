@@ -19,7 +19,7 @@ The objective of least squares regression is to minimize the residual sum of squ
 ![image](https://github.com/user-attachments/assets/cf9098c1-ef3d-4053-86d3-328671a4014f)
 
 
-where **X** <sub>i</sub> is the **row vector** corresponding to the \(i\)-th observation.
+where **X** <sub>i</sub> is the **row vector** corresponding to the i-th observation.
 
 ---
 
