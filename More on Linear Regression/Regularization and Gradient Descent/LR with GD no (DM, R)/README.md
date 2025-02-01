@@ -6,7 +6,11 @@ We aim to model the relationship between \( n \) training examples and \( p \) f
 
 ### **Step 1: Defining the Model Equation with Error Term**
 For each training example *i*, we assume a linear model:  
-*y* <sup>i</sup> = *b*<sub>0</sub> + *b*<sub>1</sub> *x*<sub>1</sub> <sup>i</sup> + *b*<sub>2</sub> *x*<sub>2</sub> <sup>i</sup> + .... + *b*<sub>p</sub> *x*<sub>p</sub> <sup>i</sup>
+*y* <sup>i</sup> = *b*<sub>0</sub> + *b*<sub>1</sub> *x*<sub>1</sub> <sup>i</sup> + *b*<sub>2</sub> *x*<sub>2</sub> <sup>i</sup> + .... + *b*<sub>p</sub> *x*<sub>p</sub> <sup>i</sup> + $\epsilon$ <sup>i</sup>
+
+or in vector notation:  
+*y* <sup>i</sup> = **b** <sup>T</sup> **X**<sup>i</sup> + $\epsilon$
+
 
 where:
 - \( y^{(i)} \) is the actual target value for the \( i \)-th example.
