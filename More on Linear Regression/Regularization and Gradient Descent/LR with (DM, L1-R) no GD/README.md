@@ -41,7 +41,8 @@ Lasso regression adds an \(L_1\)-norm penalty to the loss function:
 
 where:  
 - $\lambda$ > 0 is the **regularization parameter** controlling sparsity.  
-- \(\sum_{j=1}^{p} |\beta_j|\) is the **\(L_1\)-penalty**, which encourages sparsity by forcing some \(\beta_j\) to be exactly **zero**.
+- ![image](https://github.com/user-attachments/assets/7e4b4e0f-dbf9-4bba-b5e1-68ef2d7cf203)
+ is the **L<sub>1</sub>-penalty**, which encourages sparsity by forcing some \(\beta_j\) to be exactly **zero**.
 
 ---
 
