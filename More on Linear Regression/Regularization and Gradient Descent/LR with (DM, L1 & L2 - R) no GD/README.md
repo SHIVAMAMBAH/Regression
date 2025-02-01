@@ -1,4 +1,4 @@
-### **Linear Regression with Both \(L_1\) and \(L_2\) Regularization (Elastic Net) Without Gradient Descent**
+### **Linear Regression with Both L1 and L2 Regularization (Elastic Net) Without Gradient Descent**
 
 In this case, we combine both **L1 regularization (Lasso)** and **L2 regularization (Ridge)** to create an **Elastic Net** model. This approach is particularly useful for handling situations where there are many correlated features and for regularization when we expect both sparsity and smoothness in the model.
 
