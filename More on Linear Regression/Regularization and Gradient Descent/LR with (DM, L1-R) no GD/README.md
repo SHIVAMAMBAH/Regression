@@ -11,7 +11,7 @@ where:
 - **X** is the *n* X *p* design matrix (with *n* observations and *p* features).  
 - **B** is the *p* X 1 coefficient vector.  
 - *Y* is the *n* X 1 response vector.  
-- \(\epsilon\) is the error term (assumed to be normally distributed).  
+- $\epsilon$ is the error term (assumed to be normally distributed).  
 
 The objective of least squares regression is to minimize the residual sum of squares (RSS):
 
