@@ -1,4 +1,4 @@
-I have devided the dataset into two categories. And i will be using the following datasets.
+I have devided the dataset into two categories. And I will be using the following datasets.
 
 ### 1. **LR Models Can Be Directly Applied Without Preprocessing**
 - **Boston Housing Dataset**  
