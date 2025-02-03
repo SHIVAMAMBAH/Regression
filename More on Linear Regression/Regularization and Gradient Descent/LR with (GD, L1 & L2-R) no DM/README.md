@@ -103,7 +103,7 @@ Substituting the computed gradient:
 ## **6. Steps for Gradient Descent with Elastic Net**
 1. **Initialize** $\beta$<sub>(0)</sub> (random values or zeros).
 2. **Set** the learning rate $\eta$.
-3. **Set** the regularization parameters $\lambda<sub>1</sub>, $\lambda$<sub>2</sub>.
+3. **Set** the regularization parameters $\lambda$<sub>1</sub>, $\lambda$<sub>2</sub>.
 4. **Repeat** until convergence:
    - Compute the gradient:  
      ![image](https://github.com/user-attachments/assets/6d26d97a-d544-451e-bb70-ea4a873a724e)
