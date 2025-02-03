@@ -21,7 +21,7 @@ where:
 ---
 
 ## **2. Compute the Gradient**  
-We now compute the gradient of the loss function L($\beta$)) w.r.t. $\beta$.
+We now compute the gradient of the loss function L($\beta$) w.r.t. $\beta$.
 
 ### **2.1. Gradient of MSE Term**
 The **MSE loss** term is:
@@ -29,7 +29,7 @@ The **MSE loss** term is:
 ![image](https://github.com/user-attachments/assets/d59122bb-49fb-4050-8fa6-db57c67acb78)
 
 
-Taking its derivative w.r.t. \(\beta\):
+Taking its derivative w.r.t. $\beta$:
 
 ![image](https://github.com/user-attachments/assets/2b5980eb-91f0-41a6-801b-11797e6349e3)
 
