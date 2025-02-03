@@ -105,7 +105,7 @@ Simplifying:
 
 ### **6. The Role of the Learning Rate $\eta$**
 
-The learning rate $\eta$ determines the size of the steps we take during the optimization process. If $\eta is too large, the updates may overshoot the optimal solution, while if $\eta$ is too small, the convergence may be slow.
+The learning rate $\eta$ determines the size of the steps we take during the optimization process. If $\eta$ is too large, the updates may overshoot the optimal solution, while if $\eta$ is too small, the convergence may be slow.
 
 ---
 
