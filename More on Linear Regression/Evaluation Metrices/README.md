@@ -1,4 +1,5 @@
 ### **1. Error-based Metrics**
+These measure how far the predicted values are from the actual values.
 
 - **Mean Absolute Error (MAE)**  
   Formula:  
@@ -40,6 +41,7 @@
 ---
 
 ### **2. Goodness-of-Fit Metrics**
+These measure how well the model explains the variance in the data.
 
 - **Coefficient of Determination (R<sup>2</sup>)**  
   Formula:  
@@ -68,6 +70,9 @@
 ---
 
 ### **3. Relative Error Metrics**
+These measure the relative performance of the model.
+
+
 
 - **Mean Absolute Percentage Error (MAPE)**  
   Formula:  
