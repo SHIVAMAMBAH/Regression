@@ -9,10 +9,10 @@ Y = X $\beta$ + $\epsilon$
 
 
 Where:  
-- \( Y \in \mathbb{R}^{n \times 1} \) is the target variable (dependent variable).  
-- \( X \in \mathbb{R}^{n \times p} \) is the feature matrix (independent variables).  
-- \( \beta \in \mathbb{R}^{p \times 1} \) is the coefficient vector (parameters to be learned).  
-- \( \epsilon \) is the error term.
+- Y in R<sup>n+1</sup> is the target variable (dependent variable).  
+- X in R<sup>nxp</sup> is the feature matrix (independent variables).  
+- $\beta$ in R<sup>px1</sup> is the coefficient vector (parameters to be learned).  
+- $\epsilon$ is the error term.
 
 The objective is to find \(\beta\) that minimizes the loss function.
 
