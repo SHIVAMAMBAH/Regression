@@ -52,7 +52,7 @@ For vector form:
 ![image](https://github.com/user-attachments/assets/bd432c1f-0722-4b1a-a782-93f3a477481f)
 
 
-where **\(\operatorname{sign}(\beta)\)** is a vector function that returns:
+where **sign($\beta$)** is a vector function that returns:
 - +1 if $\beta$<sub>j</sub> > 0,
 - -1 if $\beta$<sub>j</sub> < 0,
 - 0 if $\beta$<sub>j</sub> = 0.
