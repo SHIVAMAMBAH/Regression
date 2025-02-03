@@ -28,7 +28,7 @@
   Formula:  
   ![image](https://github.com/user-attachments/assets/4962e51d-133e-45a3-bb83-cd4d71d55944)
 
-  where \( a = y_i - \hat{y}_i \).  
+  where a = y<sub>i</sub> - hat(y<sub>i</sub>) 
   - A combination of MSE and MAE, robust to outliers.
 
 - **Log-Cosh Loss**  
@@ -41,13 +41,13 @@
 
 ### **2. Goodness-of-Fit Metrics**
 
-- **Coefficient of Determination (\( R^2 \))**  
+- **Coefficient of Determination (R<sup>2</sup>)**  
   Formula:  
   ![image](https://github.com/user-attachments/assets/b74f48a8-bfa4-4cd0-9562-fa6aa45fe9fa)
 
   - Represents the proportion of variance explained by the model.
 
-- **Adjusted \( R^2 \)**  
+- **Adjusted ( R<sup>2</sup> )**  
   Formula:  
   ![image](https://github.com/user-attachments/assets/e2c8bd9d-c780-4279-b527-8ed89e248428)
 
@@ -114,7 +114,8 @@
   Formula:  
   ![image](https://github.com/user-attachments/assets/ecb30f91-e104-405b-beac-1db4d0c5418f)
 
-  where \( \rho_\tau (u) = u(\tau - I(u < 0)) \).  
+  where ![image](https://github.com/user-attachments/assets/5818a873-f53a-4905-affb-22e0fd7e221f)
+.  
   - Used in quantile regression for predicting different quantiles of the target distribution.
 
 - **Mean Absolute Error per Example (MAE/Ex)**  
