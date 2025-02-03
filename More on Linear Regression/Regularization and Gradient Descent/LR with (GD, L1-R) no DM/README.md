@@ -54,7 +54,7 @@ Where:
 
 #### **3.2. Gradient of the L1 Regularization Term**
 
-The gradient of the L1 regularization term is not straightforward, as the absolute value function |$\beta$ <sub>j</sub>| is non-differentiable at zero. However, the **subdifferential** of |$\beta$ <sub>j</sub>| is the **sign function**:
+The gradient of the L1 regularization term is not straightforward, as the absolute value function | $\beta$ <sub>j</sub> | is non-differentiable at zero. However, the **subdifferential** of | $\beta$ <sub>j</sub> | is the **sign function**:
 
 ![image](https://github.com/user-attachments/assets/27ce15d3-a214-4617-abb1-97e3314e82f9)
 
@@ -76,41 +76,36 @@ Where:
 
 The combined gradient of the full objective function is the sum of the gradients of the MSE term and the L1 regularization term:
 
-\[
-\nabla_{\beta} \mathcal{L}(\beta) = -2 X^T (Y - X \beta) + \lambda \, \text{sign}(\beta)
-\]
+![image](https://github.com/user-attachments/assets/cddfb4ae-4887-4273-af1f-df37dfdedad5)
 
 ---
 
 ### **5. Gradient Descent Update Rule**
 
-To minimize the objective function using **gradient descent**, we update \(\beta\) iteratively:
+To minimize the objective function using **gradient descent**, we update $\beta$ iteratively:
 
-\[
-\beta^{(t+1)} = \beta^{(t)} - \eta \nabla_{\beta} \mathcal{L}(\beta^{(t)})
-\]
+![image](https://github.com/user-attachments/assets/a76954e8-2cf5-4db4-b266-5f2aaa36837c)
+
 
 Where:
-- \( \eta \) is the learning rate.
-- \(\beta^{(t)}\) is the value of \(\beta\) at iteration \(t\).
+- $\eta$ is the learning rate.
+- $\beta$ <sup>(t)</sup> is the value of $\beta$ at iteration t.
 
 Substituting the gradient into this update rule:
 
-\[
-\beta^{(t+1)} = \beta^{(t)} - \eta \left( -2 X^T (Y - X \beta^{(t)}) + \lambda \, \text{sign}(\beta^{(t)}) \right)
-\]
+![image](https://github.com/user-attachments/assets/9cb7eac1-6f22-4dae-ad27-81d9959fa260)
+
 
 Simplifying:
 
-\[
-\beta^{(t+1)} = \beta^{(t)} + 2 \eta X^T (Y - X \beta^{(t)}) - \eta \lambda \, \text{sign}(\beta^{(t)})
-\]
+![image](https://github.com/user-attachments/assets/b35b1b0a-4b8d-4349-9dc1-8f8f743687a0)
+
 
 ---
 
-### **6. The Role of the Learning Rate \(\eta\)**
+### **6. The Role of the Learning Rate $\eta$**
 
-The learning rate \(\eta\) determines the size of the steps we take during the optimization process. If \(\eta\) is too large, the updates may overshoot the optimal solution, while if \(\eta\) is too small, the convergence may be slow.
+The learning rate $\eta$ determines the size of the steps we take during the optimization process. If $\eta is too large, the updates may overshoot the optimal solution, while if $\eta$ is too small, the convergence may be slow.
 
 ---
 
@@ -118,12 +113,15 @@ The learning rate \(\eta\) determines the size of the steps we take during the o
 
 To apply gradient descent for Lasso regression, the steps are as follows:
 
-1. **Initialize** \(\beta^{(0)}\) (can be zeros or random values).
-2. **Set** the learning rate \(\eta\).
-3. **Set** the regularization parameter \(\lambda\).
+1. **Initialize** $\beta$<sup>(0)</sup> (can be zeros or random values).
+2. **Set** the learning rate $\eta$.
+3. **Set** the regularization parameter $\lambda$.
 4. **Repeat** the following steps until convergence:
-   - Compute the gradient of the objective function: \(\nabla_{\beta} \mathcal{L}(\beta^{(t)}) = -2 X^T (Y - X \beta^{(t)}) + \lambda \, \text{sign}(\beta^{(t)})\).
-   - Update the coefficient vector: \(\beta^{(t+1)} = \beta^{(t)} - \eta \nabla_{\beta} \mathcal{L}(\beta^{(t)})\).
-5. **Stop** when the coefficients \(\beta^{(t)}\) converge or the maximum number of iterations is reached.
+   - Compute the gradient of the objective function: ![image](https://github.com/user-attachments/assets/32b512ec-df59-47c4-872b-83eeef244eb6)
+ = ![image](https://github.com/user-attachments/assets/cad449e2-3b00-4033-b176-e817f0576be6)
+).
+   - Update the coefficient vector: ![image](https://github.com/user-attachments/assets/fbc92362-5afc-4643-a23b-20d9303d3dd2)
+
+5. **Stop** when the coefficients $\beta$<sup>(t)</sup> converge or the maximum number of iterations is reached.
 
 ---
