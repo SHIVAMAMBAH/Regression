@@ -10,9 +10,9 @@ The model is the same as in regular linear regression:
 
 
 Where:  
-- **Y** in \mathbb{R}^{n \times 1} \) is the response vector (dependent variable).  
-- **X** in \mathbb{R}^{n \times p} \) is the design matrix (features or independent variables).  
-- $\beta$ in \mathbb{R}^{p \times 1} \) is the coefficient vector (parameters to be learned).  
+- **Y** in R<sup>n+1</sup> is the response vector (dependent variable).  
+- **X** in R<sup>nxp</sup> is the design matrix (features or independent variables).  
+- $\beta$ in R<sup>px1</sup> is the coefficient vector (parameters to be learned).  
 - $\epsilon$ is the error term (assumed to be normally distributed).
 
 We aim to find the values of $\beta$ that minimize the loss function.
@@ -23,14 +23,15 @@ We aim to find the values of $\beta$ that minimize the loss function.
 
 The objective function in **Linear Regression with L1 Regularization** is:
 
-\[
-\mathcal{L}(\beta) = \sum_{i=1}^{n} (y_i - x_i^T \beta)^2 + \lambda \sum_{j=1}^{p} |\beta_j|
-\]
+![image](https://github.com/user-attachments/assets/1906e893-067e-402b-aa09-199a3feb1ab9)
+
 
 Where:
-- The first term \(\sum_{i=1}^{n} (y_i - x_i^T \beta)^2\) is the **Mean Squared Error (MSE)**.
-- The second term \(\lambda \sum_{j=1}^{p} |\beta_j|\) is the **L1 regularization** (Lasso), which encourages sparsity in the coefficients (i.e., forcing some coefficients to become zero).
-- \(\lambda\) is the regularization parameter that controls the strength of the regularization.
+- The first term ![image](https://github.com/user-attachments/assets/9856a74a-2597-4ac9-9d5e-9a0679523f93)
+ is the **Mean Squared Error (MSE)**.
+- The second term ![image](https://github.com/user-attachments/assets/344e20e3-6e16-4507-8fef-7f92d674508a)
+ is the **L1 regularization** (Lasso), which encourages sparsity in the coefficients (i.e., forcing some coefficients to become zero).
+- $\lambda$ is the regularization parameter that controls the strength of the regularization.
 
 The goal is to minimize this objective function with respect to $\beta$.
 
@@ -38,39 +39,36 @@ The goal is to minimize this objective function with respect to $\beta$.
 
 ### **3. Gradient of the Loss Function**
 
-We need to compute the gradient of the objective function with respect to \(\beta\) in order to apply gradient descent.
+We need to compute the gradient of the objective function with respect to $\beta$ in order to apply gradient descent.
 
 #### **3.1. Gradient of the MSE Term**
 
 The gradient of the Mean Squared Error (MSE) term is:
 
-\[
-\nabla_{\beta} \left( \sum_{i=1}^{n} (y_i - x_i^T \beta)^2 \right) = -2X^T (Y - X\beta)
-\]
+![image](https://github.com/user-attachments/assets/33fe437a-b4ac-4fba-90f5-33993a610377)
+
 
 Where:
-- \( X^T \) is the transpose of the design matrix.
-- \( (Y - X\beta) \) is the residual vector (difference between actual and predicted values).
+- X<sup>T</sup>is the transpose of the design matrix.
+- (Y- X $\beta$) is the residual vector (difference between actual and predicted values).
 
 #### **3.2. Gradient of the L1 Regularization Term**
 
-The gradient of the L1 regularization term is not straightforward, as the absolute value function \(|\beta_j|\) is non-differentiable at zero. However, the **subdifferential** of \(|\beta_j|\) is the **sign function**:
+The gradient of the L1 regularization term is not straightforward, as the absolute value function |$\beta$ <sub>j</sub>| is non-differentiable at zero. However, the **subdifferential** of |$\beta$ <sub>j</sub>| is the **sign function**:
 
-\[
-\nabla_{\beta_j} \lambda |\beta_j| = \lambda \, \text{sign}(\beta_j)
-\]
+![image](https://github.com/user-attachments/assets/27ce15d3-a214-4617-abb1-97e3314e82f9)
 
-Where:
-- \(\text{sign}(\beta_j)\) is the **sign function**, which returns \(1\) for positive \(\beta_j\), \(-1\) for negative \(\beta_j\), and \(0\) for \(\beta_j = 0\).
-
-Thus, the gradient of the L1 penalty term with respect to \(\beta\) is:
-
-\[
-\nabla_{\beta} \left( \lambda \sum_{j=1}^{p} |\beta_j| \right) = \lambda \, \text{sign}(\beta)
-\]
 
 Where:
-- \(\text{sign}(\beta)\) is applied element-wise to the vector \(\beta\).
+- sign($\beta$ <sub>j</sub>) is the **sign function**, which returns 1 for positive $\beta$<sub>j</sub>, -1 for negative $\beta$<sub>j</sub>, and 0 for $\beta$<sub>j</sub> = 0.
+
+Thus, the gradient of the L1 penalty term with respect to $\beta$ is:
+
+![image](https://github.com/user-attachments/assets/5b65be40-6bce-4877-8e34-b1820ce53e0f)
+
+
+Where:
+- sign($\beta$) is applied element-wise to the vector $\beta$.
 
 ---
 
