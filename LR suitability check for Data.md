@@ -50,9 +50,9 @@ These metrics quantitatively assess the model’s goodness of fit.
 - **Red Flag?** A **very high \( R<sup>2</sup> \) (close to 1)** might indicate **overfitting**, especially in multiple regression.
 
 ### **2.2 Adjusted R²**
-- **Why?** Unlike \( R^2 \), **Adjusted \( R<sup>2</sup> \)** penalizes excessive independent variables.  
+- **Why?** Unlike \( R<sup>2</sup. \), **Adjusted \( R<sup>2</sup> \)** penalizes excessive independent variables.  
 - **Formula:**  
-- **Red Flag?** If adding a variable **decreases** Adjusted \( R<sup>2<sup> \), that variable **is not useful**.
+- **Red Flag?** If adding a variable **decreases** Adjusted \( R<sup>2</sup> \), that variable **is not useful**.
 
 ### **2.3 Mean Squared Error (MSE)**
 - **Why?** Measures the average squared difference between actual and predicted values.  
