@@ -6,7 +6,7 @@ To confirm that a dataset is suitable for **linear regression**, we must verify 
 Plots provide an intuitive way to assess the suitability of the dataset for linear regression by verifying assumptions like linearity, residual distribution, and the presence of outliers.
 
 ### **1.1 Scatter Plot**
-- **Why?** Linear regression assumes a **linear** relationship between the independent variables (\(X\)) and the dependent variable (\(Y\)).  
+- **Why?** Linear regression assumes a **linear** relationship between the independent variables  and the dependent variable.  
 - **How?** Plot \(Y\) against \(X\). If the points form a roughly straight-line pattern, linear regression is appropriate.  
 - **Red Flag?** If the data shows a **non-linear trend** (e.g., curved pattern), linear regression may not be the best choice. Consider transforming variables or using polynomial regression.
 
@@ -45,15 +45,14 @@ These metrics quantitatively assess the model’s goodness of fit.
 ### **2.1 R² Score (Coefficient of Determination)**
 - **Why?** Measures how much variance in \(Y\) is explained by \(X\).  
 - **How?**  
-  - \( R^2 \) close to **1** → Good fit.  
-  - \( R^2 \) close to **0** → Poor fit.  
-- **Red Flag?** A **very high \( R^2 \) (close to 1)** might indicate **overfitting**, especially in multiple regression.
+  - \( R<sup>2</sup> \) close to **1** → Good fit.  
+  - \( R<sup>2</sup> \) close to **0** → Poor fit.  
+- **Red Flag?** A **very high \( R<sup>2</sup> \) (close to 1)** might indicate **overfitting**, especially in multiple regression.
 
 ### **2.2 Adjusted R²**
-- **Why?** Unlike \( R^2 \), **Adjusted \( R^2 \)** penalizes excessive independent variables.  
+- **Why?** Unlike \( R^2 \), **Adjusted \( R<sup>2</sup> \)** penalizes excessive independent variables.  
 - **Formula:**  
-  where \( n \) = number of observations, \( p \) = number of predictors.  
-- **Red Flag?** If adding a variable **decreases** Adjusted \( R^2 \), that variable **is not useful**.
+- **Red Flag?** If adding a variable **decreases** Adjusted \( R<sup>2<sup> \), that variable **is not useful**.
 
 ### **2.3 Mean Squared Error (MSE)**
 - **Why?** Measures the average squared difference between actual and predicted values.  
@@ -69,7 +68,6 @@ These metrics quantitatively assess the model’s goodness of fit.
 
 ### **2.6 Variance Inflation Factor (VIF)**
 - **Why?** Detects **multicollinearity** (high correlation between independent variables).  
-  where \( R^2_j \) is the coefficient of determination for a predictor regressed against other predictors.
 - **Red Flag?**  
   - \( VIF > 5 \) → Possible multicollinearity.  
   - \( VIF > 10 \) → **Serious** multicollinearity, making coefficients unreliable.
