@@ -38,9 +38,12 @@ Taking the derivative with respect to *B* and setting it to zero:
 
 ![Capture44](https://github.com/user-attachments/assets/944cd76f-a5ad-49ad-be8e-55dc3600fce5)
 
+(Y - XB)<sup>T</sup>(Y - XB) = (Y<sup>T</sup> - (XB)<sup>T</sup>)(Y - XB) = Y<sup>T</sup>Y - Y<sup>T</sup>(XB) - (XB)<sup>T</sup>Y + (XB)<sup>T</sup>(XB) = Y<sup>T</sup>Y - 2Y<sup>T</sup>XB + B<sup>T</sup>X<sup>T</sup>XB
+
 Solving:
 
 ![Capture46](https://github.com/user-attachments/assets/32949b11-e972-4b53-aae9-440b2c835dd4)
+
 
 **Step 3: Solving for B**
 
