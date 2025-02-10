@@ -1,4 +1,4 @@
-### **Linear Regression with \(L_2\) Regularization (Ridge Regression) Without Gradient Descent**
+### **Linear Regression with L2 Regularization (Ridge Regression) Without Gradient Descent**
 
 ---
 
