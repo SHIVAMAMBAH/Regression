@@ -40,7 +40,8 @@ Lasso regression adds an L1-norm penalty to the loss function:
 
 
 where:  
-- $\lambda$ > 0 is the **regularization parameter** controlling sparsity.  
+- $\lambda$ > 0 is the **regularization parameter** controlling sparsity.
+  > Sparsity of the model refers to the situation where only a small number of features (or parameters) in the model have non-zero values,while the remainder are set to zero. This means that the model relies on a limited number of important predictors instead of utilizing all available features.  
 - ![image](https://github.com/user-attachments/assets/7e4b4e0f-dbf9-4bba-b5e1-68ef2d7cf203)
  is the **L<sub>1</sub>-penalty**, which encourages sparsity by forcing some $\beta$ <sub>j</sub> to be exactly **zero**.
 
