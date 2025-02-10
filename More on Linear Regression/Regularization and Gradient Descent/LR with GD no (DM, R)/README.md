@@ -49,7 +49,7 @@ Or in matrix notation:
 ---
 
 ### **Step 3: Computing the Gradient**
-To minimize \( J(\mathbf{b}) \), we compute its gradient with respect to each parameter \( b_j \):
+To minimize J(B), we compute its gradient with respect to each parameter b<sub>j</sub>:
 
 ![image](https://github.com/user-attachments/assets/86286412-cb30-40c1-b170-cb6b561a5ed0)
 
