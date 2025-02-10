@@ -82,6 +82,11 @@ where x<sub>ij</sub> is the j<sub>th</sub> feature of the i<sup>th</sup> observa
 The derivative of the regularization term is:
 
 ![image](https://github.com/user-attachments/assets/66168493-410b-4eb4-b7d7-9ff831b6c6fa)
+  > The term sign($\beta$<sub>j</sub>) returns:
+    - 1 if ($\beta$<sub>j</sub>) > 0
+    - -1 if ($\beta$<sub>j</sub>) < 0
+    - 0 if ($\beta$<sub>j</sub>) = 0
+    - This indicates the direction of the gradient for each coefficient.
 
 
 Setting the gradient to zero:
