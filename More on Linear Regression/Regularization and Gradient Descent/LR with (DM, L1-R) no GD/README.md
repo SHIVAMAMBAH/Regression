@@ -52,6 +52,7 @@ where:
 Instead of solving directly, we convert the constrained problem:
 
 ![image](https://github.com/user-attachments/assets/7bbde288-3497-4830-a858-765c6e930062)
+  > The variable t represents a threshold for controlling the total absolute value of the coefficients. This constraint restricts the sum of the absolute values of the coefficients to be less or equal to t. By introducing the constraint with t, you effectively control the model's sparsity and compexity. A smaller value of t encourages the model to use fewer non-zero coefficients, potentially leading to better generalization and interpretability.
 
 
 into the **Lagrange form**:
